@@ -333,7 +333,7 @@ if 'questions' not in st.session_state:
         
         "Histoire et Politique": [
             
-            {"q": "Qui est le premier président de la République de Guinée ?", 
+            {"q": "Qui fut le premier président de la République de Guinée ?", 
              "o": ["Almamy Samory Touré", "Lansana Conté", "Diallo Télli", "Ahmed Sékou Touré"], 
              "r": "Ahmed Sékou Touré"},
             
@@ -366,11 +366,11 @@ if 'questions' not in st.session_state:
              "r": "Massacre au stade du 28 Septembre"},
             
             {"q": "Quel est la dévise de la République de Guinée ?", 
-             "o": ["Unité-Travail-Amour", "Travail-Justice-Liberté", "Un peuple-Un but-une foi", "Travail-Justice-Solidarité"], 
-             "r": "Travail-Justice-Solidarité"},
+             "o": ["Unité - Travail - Amour", "Travail - Justice - Liberté", "Un peuple - Un but - une foi", "Travail - Justice - Solidarité"], 
+             "r": "Travail - Justice - Solidarité"},
             
             {"q": "Quel Duo de Syndicalistes a méné les grèves de 2007 ?", 
-             "o": ["Amadou Diallo - Koumba Diakité", "Aboubacar Soumah - Abdoulaye Sow", "Ibrahima Fofana & Rabiatou Serah Diallo", "Makalé Traoré - Tibou Kamara"], 
+             "o": ["Amadou Diallo - Koumba Diakité", "Aboubacar Soumah - Abdoulaye Sow", "Ibrahima Fofana - Rabiatou Serah Diallo", "Makalé Traoré - Tibou Kamara"], 
              "r": "Ibrahima Fofana & Rabiatou Serah Diallo"},
             
             {"q": "En quelle année Sidya Touré devint Prémier Ministre ?", 
@@ -454,7 +454,7 @@ elif not st.session_state.fini:
             
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
-                st.session_state.temps_restant = 30
+                st.session_state.temps_restant = 15
                 st.rerun()
             else:
                 st.session_state.fini = True
@@ -465,7 +465,7 @@ elif not st.session_state.fini:
         with zone_chrono:
             color = "red" if st.session_state.temps_restant < 6 else "green"
             st.markdown(f"### ⏳ Temps : :{color}[{st.session_state.temps_restant}s]")
-            st.progress(st.session_state.temps_restant / 30)
+            st.progress(st.session_state.temps_restant / 15)
         time.sleep(1)
         st.session_state.temps_restant -= 1
         
@@ -474,7 +474,7 @@ elif not st.session_state.fini:
             time.sleep(1)
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
-                st.session_state.temps_restant = 30
+                st.session_state.temps_restant = 15
                 st.rerun()
             else:
                 st.session_state.fini = True
