@@ -14,7 +14,7 @@ st.set_page_config(
     }
 )
 
-# Masquage des éléments techniques pour les utilisateurs
+# Masquage des éléments techniques
 st.markdown("""
     <style>
     #MainMenu {visibility: hidden;}
@@ -131,10 +131,13 @@ if 'questions' not in st.session_state:
     all_q = []
     for theme in data_complete:
         all_q.extend(data_complete[theme])
+    
+    # MÉLANGE ALÉATOIRE ET SÉLECTION DES 20 QUESTIONS
     random.shuffle(all_q)
-    st.session_state.questions = all_q
+    st.session_state.questions = all_q[:20] # ICI ON LIMITE À 20 QUESTIONS
+    
     st.session_state.score = 0
-    st.session_state.index = -1  # -1 signifie qu'on est sur la page d'accueil
+    st.session_state.index = -1 
     st.session_state.fini = False
     st.session_state.temps_restant = 30
 
@@ -142,37 +145,35 @@ if 'questions' not in st.session_state:
 if st.session_state.index == -1:
     st.title("🇬🇳 Grand Quiz de la République de Guinée")
     st.markdown(f"""
-    ### Bienvenue dans ce défi intellectuel !
-    Testez vos connaissances sur l'histoire, la géographie, l'économie et la culture de notre belle nation. 
-    Ce quiz a été conçu pour célébrer la richesse de la Guinée et renforcer notre culture générale.
+    ### Bienvenue !
+    Testez vos connaissances sur notre nation à travers un tirage aléatoire.
     
     ---
-    **📋 Les Règles du Jeu :**
-    * **{len(st.session_state.questions)} questions** variées couvrant tous les domaines.
-    * **30 secondes** maximum par question.
-    * Pas de retour en arrière possible une fois validé.
+    **📋 Règles :**
+    * **20 questions** tirées au sort parmi notre base de données.
+    * **30 secondes** par question.
     
-    *Prêt à relever le défi ?*
+    *Chaque partie est unique !*
     """)
     
-    if st.button("🚀 COMMENCER LE QUIZ", use_container_width=True):
+    if st.button("🚀 LANCER LE DÉFI (20 Questions)", use_container_width=True):
         st.session_state.index = 0
         st.rerun()
     
-    st.info("💡 Proposé par : **Almamy Kalla BANGOURA** | Consultant en développement")
+    st.info("💡 Conçu par : **Almamy Kalla BANGOURA**")
 
 # --- INTERFACE DU QUIZ ---
 elif not st.session_state.fini:
     zone_chrono = st.empty()
     item = st.session_state.questions[st.session_state.index]
     
-    st.subheader(f"Question {st.session_state.index + 1} / {len(st.session_state.questions)}")
+    st.subheader(f"Question {st.session_state.index + 1} / 20")
     
     with st.form(key=f"q_form_{st.session_state.index}"):
         st.write(f"### {item['q']}")
-        choix = st.radio("Choisissez votre réponse :", item['o'], index=None)
+        choix = st.radio("Votre réponse :", item['o'], index=None)
         
-        if st.form_submit_button("Valider la réponse"):
+        if st.form_submit_button("Valider"):
             if choix == item['r']:
                 st.session_state.score += 1
             
@@ -188,13 +189,13 @@ elif not st.session_state.fini:
     while st.session_state.temps_restant > 0:
         with zone_chrono:
             color = "red" if st.session_state.temps_restant < 6 else "green"
-            st.markdown(f"### ⏳ Temps restant : :{color}[{st.session_state.temps_restant}s]")
+            st.markdown(f"### ⏳ Temps : :{color}[{st.session_state.temps_restant}s]")
             st.progress(st.session_state.temps_restant / 30)
         time.sleep(1)
         st.session_state.temps_restant -= 1
         
         if st.session_state.temps_restant <= 0:
-            st.warning("⌛ Temps écoulé ! Passage à la question suivante...")
+            st.warning("⌛ Temps écoulé !")
             time.sleep(1)
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
@@ -207,24 +208,11 @@ elif not st.session_state.fini:
 # --- PAGE DE RÉSULTATS ---
 else:
     st.balloons()
-    st.header("🏁 Quiz Terminé !")
+    st.header("🏁 Score Final")
+    st.metric(label="Résultat", value=f"{st.session_state.score} / 20")
     
-    score = st.session_state.score
-    total = len(st.session_state.questions)
-    pourcentage = (score / total) * 100
-    
-    st.metric(label="Votre Score Final", value=f"{score} / {total}", delta=f"{pourcentage:.1f}%")
-    
-    if pourcentage >= 80:
-        st.success("🌟 Exceptionnel ! Vous êtes un véritable expert de la Guinée !")
-    elif pourcentage >= 50:
-        st.info("👍 Bravo ! Vous avez une très bonne connaissance du pays.")
-    else:
-        st.warning("📚 Continuez d'apprendre ! La Guinée a encore beaucoup de secrets à vous révéler.")
-        
-    if st.button("🔄 Recommencer le Quiz", use_container_width=True):
+    if st.button("🔄 Rejouer (Nouvelle sélection de questions)", use_container_width=True):
         for k in list(st.session_state.keys()): del st.session_state[k]
         st.rerun()
     
-    st.write("---")
-    st.caption(f"© 2025 - Quiz conçu par Almamy Kalla BANGOURA | Consultant Data & BI")
+    st.caption(f"© 2025 - Almamy Kalla BANGOURA")
