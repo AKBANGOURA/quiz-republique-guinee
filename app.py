@@ -414,7 +414,7 @@ if 'questions' not in st.session_state:
     st.session_state.score = 0
     st.session_state.index = -1 
     st.session_state.fini = False
-    st.session_state.temps_restant = 30
+    st.session_state.temps_restant = 20
 
 # --- PAGE D'ACCUEIL ---
 if st.session_state.index == -1:
@@ -425,8 +425,8 @@ if st.session_state.index == -1:
     
     ---
     **📋 Règles :**
-    * **20 questions** tirées au sort parmi notre base de données.
-    * **30 secondes** par question.
+    * **20 QCM** tirées au sort parmi notre base de données.
+    * **20 secondes** par question.
     
     *Chaque partie est unique !*
     """)
@@ -454,7 +454,7 @@ elif not st.session_state.fini:
             
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
-                st.session_state.temps_restant = 15
+                st.session_state.temps_restant = 20
                 st.rerun()
             else:
                 st.session_state.fini = True
@@ -465,7 +465,7 @@ elif not st.session_state.fini:
         with zone_chrono:
             color = "red" if st.session_state.temps_restant < 6 else "green"
             st.markdown(f"### ⏳ Temps : :{color}[{st.session_state.temps_restant}s]")
-            st.progress(st.session_state.temps_restant / 15)
+            st.progress(st.session_state.temps_restant / 20)
         time.sleep(1)
         st.session_state.temps_restant -= 1
         
@@ -474,7 +474,7 @@ elif not st.session_state.fini:
             time.sleep(1)
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
-                st.session_state.temps_restant = 15
+                st.session_state.temps_restant = 20
                 st.rerun()
             else:
                 st.session_state.fini = True
