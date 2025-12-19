@@ -435,7 +435,7 @@ if st.session_state.index == -1:
         st.session_state.index = 0
         st.rerun()
     
-    st.info("💡 Conçu par : **Almamy Kalla BANGOURA**")
+    st.info("💡 Conçu par : **Almamy Kalla BANGOURA | Consultant Data & BI**")
 
 # --- INTERFACE DU QUIZ ---
 elif not st.session_state.fini:
