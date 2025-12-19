@@ -143,7 +143,7 @@ if 'questions' not in st.session_state:
 
 # --- PAGE D'ACCUEIL ---
 if st.session_state.index == -1:
-    st.title("🇬🇳 Grand Quiz de la République de Guinée")
+    st.title("🇬🇳 Quiz : République de Guinée")
     st.markdown(f"""
     ### Bienvenue !
     Testez vos connaissances sur notre nation à travers un tirage aléatoire.
@@ -215,4 +215,4 @@ else:
         for k in list(st.session_state.keys()): del st.session_state[k]
         st.rerun()
     
-    st.caption(f"© 2025 - Almamy Kalla BANGOURA")
+    st.caption(f"© 2025 - Almamy Kalla BANGOURA | Consultant Data & BI")
