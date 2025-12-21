@@ -418,9 +418,9 @@ if 'questions' not in st.session_state:
 
 # --- PAGE D'ACCUEIL ---
 if st.session_state.index == -1:
-    st.title("🇬🇳 République de Guinée")
+    st.title("🇬🇳 Guinée")
     st.markdown(f"""
-    ### Bienvenue dans ce QUIZ!
+    ### QUIZ : culture générale! 
     Testez vos connaissances sur notre nation à travers un tirage aléatoire de QCM.
     
     ---
