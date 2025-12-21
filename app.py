@@ -42,9 +42,9 @@ if 'questions' not in st.session_state:
              "o": ["14 ans", "11 ans", "13 ans", "12 ans"], 
              "r": "13 ans"},
             
-            {"q": "Examen sanctionnant la fin Collège?", 
+            {"q": "Examen sanctionnant la fin du Lycée?", 
              "o": ["BEPC", "Baccalauréat", "CEE", "Concours"],
-             "r": "BEPC"},
+             "r": "Baccalauréat"},
             
             {"q": "Diplôme marquant la fin du Système LMD?", 
              "o": ["Master", "Licence", "Baccalauréat", "Doctorat"],
@@ -96,7 +96,7 @@ if 'questions' not in st.session_state:
              "r": "Sage-femme"},
             
             {"q": "Document requis pour le baccalauréat?",
-             "o": ["CEE", "Acte naissance", "BEPC", "Identité"], 
+             "o": ["CEE", "Acte de naissance", "BEPC", "Identité"], 
              "r": "BEPC"},
             
             {"q": "Objectif principal de la vaccination?", 
@@ -127,8 +127,8 @@ if 'questions' not in st.session_state:
              "r": "1011 mètres"},
             
             {"q": "Lequel de ces résistants est mort en 1897",
-             "o": ["Dinah Salifou", "El Omar Tall", "Almamy Samory Touré", "Kissi Kaba Keita"],
-             "r": "Dinah Salifou"},
+             "o": ["Dinah Salifou Camara", "Elhadj Omar Tall", "Almamy Samory Touré", "Kissi Kaba Keita"],
+             "r": "Dinah Salifou Camara"},
             
             {"q": "Plus grande ville de la Guinée sur le plan économique?", 
              "o": ["Kankan", "Labé", "Nzérékoré", "Conakry"], 
@@ -242,9 +242,9 @@ if 'questions' not in st.session_state:
              "o": ["Mory Kanté", "Sory Kandia Kouyaté", "Sékouba Bambino", "Mory Djély"], 
              "r": "Mory Kanté"},
             
-            {"q": "Quel événement culturel célèbre les arts guinéens?", 
-             "o": ["Le festival panafricain", "Le festival national des arts et de la culture", "Le Carnaval national", "La fête de l'Indépendance"], 
-             "r": "Le festival national des arts et de la culture"}
+            {"q": "Date anniversaire du NON historique?", 
+             "o": ["Le 02 Octobre 1958", "Le 04 Avril 1984", "Le 28 Septembre 1958", "Le 1er Mars 1960"], 
+             "r": "Le 28 Septembre 1958"}
             
         ],
         
