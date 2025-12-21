@@ -69,7 +69,7 @@ if 'questions' not in st.session_state:
             
             {"q": "Plus grand hôpital de référence à Conakry?",
              "o": ["CHU Ignace Deen", "CHU Donka", "Sino-Guinéen", "Clinique Pasteur"], 
-             "r": CHU Donka"},
+             "r": "CHU Donka"},
             
             {"q": "Epidémie ayant touchée la Guinée (2014-2016)?", 
              "o": ["Paludisme", "Choléra", "COVID-19", "Ebola"], 
