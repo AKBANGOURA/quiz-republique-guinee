@@ -114,21 +114,21 @@ if 'questions' not in st.session_state:
         
         "Géographie et Economie": [
             
-            {"q": "La Guinée comprend combien de régions naturelles?", 
-             "o": ["3", "4", "5", "6"], 
-             "r": "4"},
+            {"q": "Nombre de sous préfecture?", 
+             "o": ["33", "318", "333", "323"], 
+             "r": "333"},
             
-            {"q": "Laquelle de ces régions est une zone côtière?",
+            {"q": "Quelle région est une zone côtière?",
              "o": ["Haute  Guinée", "Moyenne  Guinée", "Basse Guinée", " Guinée Forestière"],
              "r": "Basse Guinée"},
             
-            {"q": "Région naturelle dominée par le massif du Fouta-Djalon?", 
-             "o": ["Basse  Guinée", "Moyenne Guinée", "Haute  Guinée", " Guinée Forestière"], 
-             "r": "Moyenne Guinée"},
+            {"q": "L'altitude du mont Kakoulima?", 
+             "o": ["1235 mètres", "1134 mètres", "1011 mètres", "1335 mètres"], 
+             "r": "1011 mètres"},
             
-            {"q": "Région considérée comme le principal grenier agricole?",
-             "o": ["Basse Guinée", "Haute Guinée", " Guinée Forestière", "Moyenne Guinée"],
-             "r": "Haute Guinée"},
+            {"q": "Lequel de ces résistants est mort en 1897",
+             "o": ["Dinah Salifou", "El Omar Tall", "Almamy Samory Touré", "Kissi Kaba Keita"],
+             "r": "Dinah Salifou"},
             
             {"q": "Plus grande ville de la Guinée sur le plan économique?", 
              "o": ["Kankan", "Labé", "Nzérékoré", "Conakry"], 
@@ -142,31 +142,31 @@ if 'questions' not in st.session_state:
              "o": ["Le Niger", "Le Sénégal", "Le Congo", "Le Nil"], 
              "r": "Le Niger"},
             
-            {"q": "Activité économique dominante en Guinée Forestière?", 
-             "o": ["Élevage", "Pêche", "Agriculture", "Industrie pétrolière"], 
-             "r": "Agriculture"},
+            {"q": "Nombre de pays frontaliers à la Guinée?", 
+             "o": ["7", "8", "6", "9"], 
+             "r": "6"},
             
-            {"q": "Minérai exploité par le projet Simandou ?",
+            {"q": "Minérai exploité par le projet Simandou?",
              "o": ["Fer", "Bauxite", "Or", "Diamant"], 
              "r": "Fer"},
             
-            {"q": "La Guinée détient l’une des plus grandes réserves mondiales de", 
-             "o": ["Fer", "Or", "Bauxite", "Cuivre"],
-             "r": "Bauxite"},
+            {"q": "Laquelle n'est pas une région administrative", 
+             "o": ["Kindia", "Faranah", "Siguirin", "Labé"],
+             "r": "Siguirin"},
             
             {"q": "Quelle ville est la capitale des agrumes?", 
-             "o": ["Guékedou", "Kindia", "Dalaba", "Dabola"], 
+             "o": ["Guékedou", "Kindia", "Pita", "Dabola"], 
              "r": "Kindia"},
             
-            {"q": "Port le plus important pour le commerce extérieur?",
-             "o": ["Port de Kamsar", "Port de Conakry", "Port de Maferenya", "Port de Boké"], 
-             "r": "Port de Conakry"},
+            {"q": "Quelle prefecture abrite le mont Nimba?",
+             "o": ["Lola", "Beyla", "Macenta", "Yomou"], 
+             "r": "Lola"},
             
             {"q": "La culture largement pratiquée en Basse Guinée?", 
-             "o": ["Café", "Cacao", "Riz", "Coton"],
+             "o": ["Café", "Fonio", "Riz", "Coton"],
              "r": "Riz"},
             
-            {"q": "Pays ne partageant pas de frontière avec la Guinée?", 
+            {"q": "Pays non frontalier de la Guinée?", 
              "o": ["Sierra Leone", "Mali", "Sénégal", "Ghana"], 
              "r": "Ghana"},
             
@@ -174,23 +174,23 @@ if 'questions' not in st.session_state:
              "o": ["Franc CFA", "Le syli", "Z-mao", "GNF"], 
              "r": "GNF"},
             
-            {"q": "Région naturelle riche en forêts denses?", 
-             "o": ["Haute Guinée", "Basse Guinée", "Guinée Forestière", "Moyenne Guinée"], 
-             "r": "Guinée Forestière"},
+            {"q": "La colonisation commence en Guinée en?", 
+             "o": ["1900", "1898", "1918", "1858"], 
+             "r": "1898"},
             
-            {"q": "Minerai exploité principalement dans la ville de Siguirin?", 
-             "o": ["Fer", "Diamant", "Bauxite", "Or"], 
-             "r": "Or"},
+            {"q": "Laquelle n'est pas une ville cotière?", 
+             "o": ["Forécariah", "Fria", "Boké", "Dubréka"], 
+             "r": "Fria"},
             
-            {"q": "Activité économique dominante le long du littoral?", 
-             "o": ["Pêche", "Élevage", "Forêt", "Montagne"],
-             "r": "Pêche"},
+            {"q": "Quel Ministère collecte les impôts?", 
+             "o": ["Economie et Finance", "Commerce et Industrie", "Budget", "Banque central"],
+             "r": "Budget"},
             
-            {"q": "Quel est le climat dominant en Guinée?", 
+            {"q": "Quel climat domine en Guinée?", 
              "o": ["Désertique", "Méditerranéen", "Tropical", "Tempéré"], 
              "r": "Tropical"},
             
-            {"q": "La ville de Kamsar est dans quelle préfecture?", 
+            {"q": "Quelle préfecture abrite la ville de Kamsar?", 
              "o": ["Fria", "Boke", "Dubréka", "Boffa"], 
              "r": "Boffa"}
             
@@ -202,7 +202,7 @@ if 'questions' not in st.session_state:
              "o": ["Basketball", "Athlétisme", "Football", "Handball"],
              "r": "Football"},
             
-            {"q": "Comment s’appelle l’équipe nationale de football?",
+            {"q": "Appelation de l’équipe nationale de football?",
              "o": ["Gbin Gbin Soo", "Les Éléphants", "Le Syli National",  "Les Aigles"], 
              "r": "Le Syli National"},
             
@@ -214,23 +214,23 @@ if 'questions' not in st.session_state:
              "o": ["Kankan", "Labé", "Boké", "Nzérékoré"],
              "r": "Labé"},
             
-            {"q": "Le massif du Fouta-Djalon est surtout connu pour:", 
-             "o": ["Ses plages", "Ses déserts", "Ses montagnes et cascades", "Ses volcans"], 
-             "r": "Ses montagnes et cascades"},
+            {"q": "Le massif du Fouta-Djalon est connu pou ses", 
+             "o": ["plages", "déserts", "montagnes et cascades", "forêts"], 
+             "r": "montagnes et cascades"},
             
-            {"q": "Quel site naturel guinéen est célèbre pour ses cascades?",
+            {"q": "Site naturel guinéen célèbre pour ses cascades?",
              "o": ["Îles de Loos", "Voile de la Mariée", "Mont Nimba", "Mont Kakoulima"],
              "r": "Voile de la Mariée"},
             
-            {"q": "Quel archipel est situé au large de Conakry?",
+            {"q": "Archipel situé au large de Conakry?",
              "o": ["Îles de Loos", "Îles Canaries", "Îles Bijagos", "Îles du Cap-Vert"], 
              "r": "Îles de Loos"},
             
-            {"q": "Parc naturel partagé entre Guinée, Libéria et C.Ivoire?", 
+            {"q": "Parc naturel partagé entre Guinée, Libéria et Côte d'Ivoire?", 
              "o": ["Parc du Badiar", "Parc national du Mont Nimba", "Parc du Niokolo-Koba", "Parc du W"], 
              "r": "Parc national du Mont Nimba"},
             
-            {"q": "Instrument de musique traditionnelle très répandu en Guinée?", 
+            {"q": "Instrument traditionnelle de musique très répandu en Guinée?", 
              "o": ["Tamtam", "Guitare", "Kora", "Kenkedi"],
              "r": "Kora"},
             
@@ -250,27 +250,27 @@ if 'questions' not in st.session_state:
         
         "Justice et Sécurité": [
             
-            {"q": "Loi fondamentale organisant l’État guinéen?", 
+            {"q": "Loi fondamentale de l’État guinéen?", 
              "o": ["Le Code civil", "La Constitution", "Le Code pénal", "La Charte nationale"], 
              "r": "La Constitution"},
             
-            {"q": "Le Ministre de la Justice exerce quel pouvoir?",
-             "o": ["Le pouvoir exécutif", "Le pouvoir législatif", "Le pouvoir judiciaire", "La presse nationale"],
-             "r": "Le pouvoir exécutif"},
+            {"q": "Le Ministre de la Justice exerce le pouvoir?",
+             "o": ["exécutif", "législatif", "judiciaire", "administratif"],
+             "r": "exécutif"},
             
-            {"q": "Quelle institution rend la justice au nom du peuple?",
+            {"q": "Institution rendant la justice au nom du peuple?",
              "o": ["Le Gouvernement", "Les tribunaux", "L’Assemblée nationale", "La Cour des comptes"], 
              "r": "Les tribunaux"},
             
-            {"q": "Quel est le rôle principal de la police nationale?",
+            {"q": "Rôle principal de la police nationale?",
              "o": ["Défendre le territoire", "Voter les lois", "Maintenir l’ordre public", "Rendre la justice"], 
              "r": "Maintenir l’ordre public"},
             
-            {"q": "Force chargée de la défense du territoire?",
+            {"q": "Force chargée de la défense territoriale?",
              "o": ["La Police", "La Gendarmerie", "Les Forces armées", "La Protection civile"], 
              "r": "Les Forces armées"},
             
-            {"q": "Institution chargée de juger les infractions économiques?", 
+            {"q": "Institution jugeant les infractions économiques?", 
              "o": ["La cour des comptes", "La CRIEF", "Le Trésor public", "Le CENA"], 
              "r": "La CRIEF"},
             
@@ -286,7 +286,7 @@ if 'questions' not in st.session_state:
              "o": ["Le Prémier Ministre", "Le Ministre Défense", "Le Président de la République", "Le Chef d'État-major"], 
              "r": "Le Président de la République"},
             
-            {"q": "Quel texte définit les infractions et les peines?",
+            {"q": "Texte définissant les infractions et les peines?",
              "o": ["Le Code civil", "Le Code pénal", "La Constitution", "Le Code du travail"], 
              "r": "Le Code pénal"},
             
@@ -303,10 +303,10 @@ if 'questions' not in st.session_state:
              "r": "La Protection civile"},
             
             {"q": "Quel est le rôle des douanes?", 
-             "o": ["Rendre la justice", "Assurer la défense", "Contrôler les marchandises aux frontières", "Voler l'argent du contribuable"],
-             "r": "Contrôler les marchandises aux frontières"},
+             "o": ["Rendre la justice", "Assurer la défense", "Contrôle aux frontières", "Voler l'argent public"],
+             "r": "Contrôle aux frontières"},
             
-            {"q": "Quelle juridiction traite principalement les affaires civiles?",
+            {"q": "Juridiction traitant les affaires civiles?",
              "o": ["Tribunal civil", "Tribunal militaire", "Cour martiale", "Haute Cour"], 
              "r": "Tribunal civil"},
             
@@ -326,14 +326,14 @@ if 'questions' not in st.session_state:
              "o": ["Police et la sécurité intérieure", "La Gendarmerie et les Forces armées", "Les Tribunaux", "Les frontaliers"], 
              "r": "La Gendarmerie et les Forces armées"},
             
-            {"q": "Institution chargé voter les lois?", 
+            {"q": "Institution chargé de voter les lois?", 
              "o": ["La Présidence de la République", "La cour suprëme", "L'assemblée nationale", "Le Ministère de la Justice"],
              "r": "L'assemblée nationale"}
         ],
         
         "Histoire et Politique": [
             
-            {"q": "Le tout premier président de l'Assemblée nationale?", 
+            {"q": "Qui fût le 1er président de l'Assemblée nationale?", 
              "o": ["Siradio Diallo", "Barry 3", "Diallo Télli", "Saifoulaye Diallo"], 
              "r": "Saifoulaye Diallo"},
             
@@ -353,27 +353,27 @@ if 'questions' not in st.session_state:
              "o": ["Manquepas", "Boulbinet", "Almamya", "Coronthie"], 
              "r": "Boulbinet"},
             
-            {"q": "Qui fut le premier sécrétaire général du PDG-RDA?",
+            {"q": "Qui fût le 1er sécrétaire général du PDG-RDA?",
              "o": ["Amara Soumah", "Ahmed Sékou Touré", "Saifoulaye Diallo", "Madera Keita"], 
              "r": "Madera Keita"},
             
-            {"q": "Le tout 1er des Premiers Ministres guinéen?", 
+            {"q": "Qui fût le tout 1er des PM en Guinée?", 
              "o": ["Lounceny Fall", "Lansana Béavogui", "Diarra Traoré", "Sidya Touré"], 
              "r": "Lansana Béavogui"},
             
             {"q": "Quel événement majeur s’est produit en Guinée en 2009?",
-             "o": ["Révolution populaire", "Coup d’État", "Grêve générale des fonctionnaires", "Massacre au stade du 28 Septembre"],
-             "r": "Massacre au stade du 28 Septembre"},
+             "o": ["Révolution populaire", "Coup d’État", "Grêve générale", "Massacre au stade du 28 Sept"],
+             "r": "Massacre au stade du 28 Sept"},
             
             {"q": "La dévise de la République de Guinée?", 
-             "o": ["Unité - Travail - Amour", "Travail - Justice - Liberté", "Un peuple - Un but - une foi", "Travail - Justice - Solidarité"], 
-             "r": "Travail - Justice - Solidarité"},
+             "o": ["Unité-Travail-Amour", "Travail-Justice-Liberté", "Un peuple-Un but-une foi", "Travail-Justice-Solidarité"], 
+             "r": "Travail-Justice-Solidarité"},
             
-            {"q": "Duo de Syndicalistes à la tête des grèves en 2007?", 
-             "o": ["Amadou Diallo - Koumba Diakité", "Aboubacar Soumah - Abdoulaye Sow", "Ibrahima Fofana - Rabiatou Serah Diallo", "Makalé Traoré - Tibou Kamara"], 
-             "r": "Ibrahima Fofana & Rabiatou Serah Diallo"},
+            {"q": "Quel officier était à la tête du CNDD?", 
+             "o": ["Mamadi Doumbouya", "Sekouba Konaté", "Moussa Dadis Camara", "Toto Camara"], 
+             "r": "Moussa Dadis Camara"},
             
-            {"q": "En quelle année Sidya Touré devint Prémier Ministre?", 
+            {"q": "Sidya Touré devint Prémier Ministre en?", 
              "o": ["1993", "2008", "2010", "1996"], 
              "r": "1996"},
             
@@ -385,7 +385,7 @@ if 'questions' not in st.session_state:
              "o": ["Stade Petit Sory", "Stade du 28 septembre", "Stade Général Lansana Conté", "Stade M'ballou Mady Diakité"],
              "r": "Stade du 28 septembre"},
             
-            {"q": "Dans quelle organisation régionale la Guinée siège-t-elle?", 
+            {"q": "La Guinée siège au sein de l'Organisation?", 
              "o": ["UEMOA", "CEEAC", "CEDEAO", "SADC"], 
              "r": "CEDEAO"},
             
