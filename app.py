@@ -71,7 +71,7 @@ if 'questions' not in st.session_state:
              "o": ["CHU Ignace Deen", "CHU Donka", "Hôpital Sino-Guinéen", "Clinique Pasteur"], 
              "r": "CHU Donka"},
             
-            {"q": "Maladie ayant touché la Guinée (2014-2016) ?", 
+            {"q": "Maladie ayant touché la Guinée (2014-2016)?", 
              "o": ["Paludisme", "Choléra", "COVID-19", "Ebola"], 
              "r": "Ebola"},
             
@@ -154,7 +154,7 @@ if 'questions' not in st.session_state:
              "o": ["Fer", "Or", "Bauxite", "Cuivre"],
              "r": "Bauxite"},
             
-            {"q": "Quelle ville est la capitale de agrumes?", 
+            {"q": "Quelle ville est la capitale des agrumes?", 
              "o": ["Guékedou", "Kindia", "Dalaba", "Dabola"], 
              "r": "Kindia"},
             
