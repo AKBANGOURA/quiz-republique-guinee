@@ -420,7 +420,7 @@ if 'questions' not in st.session_state:
 if st.session_state.index == -1:
     st.title("🇬🇳 République de Guinée")
     st.markdown(f"""
-    ### Bienvenue dans le QUIZ !
+    ### Bienvenue dans ce QUIZ!
     Testez vos connaissances sur notre nation à travers un tirage aléatoire de QCM.
     
     ---
@@ -428,7 +428,7 @@ if st.session_state.index == -1:
     * **20 QCM** tirées au sort parmi 100 QCM de notre base de données.
     * **15 secondes** par question.
     
-    *Chaque partie est unique ! Une seule case à cocher, c'est amusant et instructif*
+    *Chaque partie est unique ! Une seule case à cocher, c'est amusant et instructif.*
     """)
     
     if st.button("🚀 LANCER LE DÉFI (20 Questions)", use_container_width=True):
