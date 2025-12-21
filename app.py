@@ -414,7 +414,7 @@ if 'questions' not in st.session_state:
     st.session_state.score = 0
     st.session_state.index = -1 
     st.session_state.fini = False
-    st.session_state.temps_restant = 15
+    st.session_state.temps_restant = 12
 
 # --- PAGE D'ACCUEIL ---
 if st.session_state.index == -1:
@@ -426,7 +426,7 @@ if st.session_state.index == -1:
     ---
     **📋 Règles :**
     * **20 QCM** tirées au sort parmi 100 QCM de notre base de données.
-    * **15 secondes** par question.
+    * **12 secondes** par question (Il faut donc connaître et être rapide).
     
     *Chaque partie est unique ! Une seule case à cocher, c'est amusant et instructif.*
     """)
@@ -454,7 +454,7 @@ elif not st.session_state.fini:
             
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
-                st.session_state.temps_restant = 15
+                st.session_state.temps_restant = 12
                 st.rerun()
             else:
                 st.session_state.fini = True
@@ -465,7 +465,7 @@ elif not st.session_state.fini:
         with zone_chrono:
             color = "red" if st.session_state.temps_restant < 6 else "green"
             st.markdown(f"### ⏳ Temps : :{color}[{st.session_state.temps_restant}s]")
-            st.progress(st.session_state.temps_restant / 15)
+            st.progress(st.session_state.temps_restant / 12)
         time.sleep(1)
         st.session_state.temps_restant -= 1
         
@@ -474,7 +474,7 @@ elif not st.session_state.fini:
             time.sleep(1)
             if st.session_state.index < len(st.session_state.questions) - 1:
                 st.session_state.index += 1
-                st.session_state.temps_restant = 15
+                st.session_state.temps_restant = 12
                 st.rerun()
             else:
                 st.session_state.fini = True
