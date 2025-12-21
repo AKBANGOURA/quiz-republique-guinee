@@ -275,10 +275,10 @@ if 'questions' not in st.session_state:
              "r": "La CRIEF"},
             
             {"q": "Rôle du ministère de la Justice?", 
-             "o": ["Organiser les élections", "Assurer la défense", "Administrer la justice", "Protéger les riches du pays"], 
+             "o": ["Organiser les élections", "Assurer la défense", "Administrer la justice", "Protéger les riches"], 
              "r": "Administrer la justice"},
             
-            {"q": "Corps assurant la sécurité en milieu rural et sur les routes?", 
+            {"q": "Corps assurant la sécurité en milieu rural?", 
              "o": ["La Police nationale", "La Gendarmerie nationale", "Les Douanes", "La Protection civile"], 
              "r": "La Gendarmerie nationale"},
             
@@ -322,9 +322,9 @@ if 'questions' not in st.session_state:
              "o": ["La liberté", "La solidarité", "L’État de droit", "La souveraineté"],
              "r": "L’État de droit"},
             
-            {"q": "Service chargé de la sécurité des frontières?",
-             "o": ["Police et la sécurité intérieure", "La Gendarmerie et les Forces armées", "Les Tribunaux", "Les frontaliers"], 
-             "r": "La Gendarmerie et les Forces armées"},
+            {"q": "Le Président de la cour suprême est?",
+             "o": ["élu par ses pairs", "mommé par décret", "choisit par les juges", "nommé par le parquet"], 
+             "r": "mommé par décret"},
             
             {"q": "Institution chargé de voter les lois?", 
              "o": ["La Présidence de la République", "La cour suprëme", "L'assemblée nationale", "Le Ministère de la Justice"],
