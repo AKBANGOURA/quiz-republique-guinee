@@ -483,12 +483,45 @@ elif not st.session_state.fini:
 # --- PAGE DE RÉSULTATS ---
 else:
     st.balloons()
-    st.header("🏁 Score Final")
-    st.metric(label="Résultat", value=f"{st.session_state.score} / 20")
+    st.header("🏁 Quiz Terminé !")
     
-    if st.button("🔄 Rejouer (Nouvelle sélection de questions)", use_container_width=True):
-        for k in list(st.session_state.keys()): del st.session_state[k]
-        st.rerun()
+    score = st.session_state.score
+    total = 20
     
-    st.caption(f"© 2025 - Almamy Kalla BANGOURA | Consultant Data & BI")
+    # Affichage du score avec un design propre
+    st.metric(label="Votre Score Final", value=f"{score} / {total}")
+    
+    # --- LOGIQUE DES PHRASES DE MOTIVATION ---
+    if score == 20:
+        st.success("🏆 **Honorable** : Une connaissance parfaite sur la Guinée !")
+    elif 18 <= score <= 19:
+        st.success("🌟 **Excellent** : Une connaissance presque parfaite sur la Guinée.")
+    elif 15 <= score <= 17:
+        st.info("👏 **Très Bien** : Une bonne connaissance sur la Guinée.")
+    elif 12 <= score <= 14:
+        st.info("👍 **Bien** : Une connaissance appréciable sur la Guinée.")
+    elif 9 <= score <= 11:
+        st.warning("😐 **Passable** : Une connaissance moyenne sur la Guinée.")
+    elif 5 <= score <= 8:
+        st.warning("📚 **Encouragement** : Je vous encourage à apprendre sur la Guinée.")
+    else:
+        st.error("❗ **À réviser** : Veuillez apprendre davantage sur la Guinée.")
+
+    st.write("---")
+    
+    # Boutons d'action
+    col1, col2 = st.columns(2)
+    with col1:
+        if st.button("🔄 Rejouer une partie", use_container_width=True):
+            # Reset complet de la session pour un nouveau tirage aléatoire
+            for k in list(st.session_state.keys()):
+                del st.session_state[k]
+            st.rerun()
+    
+    with col2:
+        # Optionnel : Un bouton pour partager (juste visuel ici)
+        st.button("🔗 Partager mon score", use_container_width=True, help="Bientôt disponible")
+
+    st.write("")
+    st.caption(f"© 2025 - Quiz conçu par **Almamy Kalla BANGOURA** | Consultant Data & BI")
   
