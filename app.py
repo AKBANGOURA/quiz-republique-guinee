@@ -30,36 +30,36 @@ if 'questions' not in st.session_state:
         
         "Education et Santé": [
             
-            {"q": "L'année du BAC avec le plus faible taux de résussite (9%)?", 
+            {"q": "L'année du BAC avec un taux de résussite de 9%?", 
              "o": ["1998", "2007", "2022", "2003"], 
              "r": "2022"},
             
-            {"q": "Niveau d’enseignement qui suit l’école primaire?", 
-             "o": ["Université", "Lycée", "Collège", "Formation professionnelle"], 
+            {"q": "Niveau d’enseignement après l’école primaire?", 
+             "o": ["Université", "Lycée", "Collège", "BTS"], 
              "r": "Collège"},
             
-            {"q": "Combien d’années dure normalement l’enseignement primaire?",
-             "o": ["4 ans", "5 ans", "6 ans", "7 ans"], 
-             "r": "6 ans"},
+            {"q": "Combien d’années dure l’enseignement général?",
+             "o": ["14 ans", "11 ans", "13 ans", "12 ans"], 
+             "r": "13 ans"},
             
-            {"q": "Examen sanctionnant la fin des études primaires?", 
-             "o": ["BEPC", "Baccalauréat", "CEE", "CAP"],
-             "r": "CEE"},
+            {"q": "Examen sanctionnant la fin Collège?", 
+             "o": ["BEPC", "Baccalauréat", "CEE", "Concours"],
+             "r": "BEPC"},
             
-            {"q": "Quel diplôme marque la fin de l’enseignement secondaire?", 
-             "o": ["BEPC", "Licence", "Baccalauréat", "Master"],
-             "r": "Baccalauréat"},
+            {"q": "Diplôme marquant la fin du Système LMD?", 
+             "o": ["Master", "Licence", "Baccalauréat", "Doctorat"],
+             "r": "Doctorat"},
             
-            {"q": "Quelle est la principale université publique de Guinée?", 
-             "o": ["Université GLC Sonfonia", "Université de Labé", "Université Gamal Abdel Nasser", "Université Koffi Anan"], 
-             "r": "Université Gamal Abdel Nasser"},
+            {"q": "Principale université publique de Guinée?", 
+             "o": ["GLC Sonfonia", "Julius Nyéréré", "Gamal Abdel Nasser", "Koffi Anan"], 
+             "r": "Gamal Abdel Nasser"},
             
-            {"q": "Quel est l’objectif principal de l’alphabétisation?", 
-             "o": ["Former des médecins", "Apprendre à lire et à écrire", 
-                   "Formation enseignants", "Emplois"], 
-             "r": "Apprendre à lire et à écrire"},
+            {"q": "Objectif principal de l’alphabétisation?", 
+             "o": ["Parler et conjuguer", "Lire et à écrire", 
+                   "Chanter et réciter", "Déssiner et animer"], 
+             "r": "Lire et à écrire"},
             
-            {"q": "Quel est l’âge officiel d’entrée à l’école primaire?", 
+            {"q": "L’âge officiel d’entrée à l’école primaire?", 
              "o": ["5 ans", "6 ans", "7 ans", "8 ans"],
              "r": "7 ans"},
             
@@ -67,11 +67,11 @@ if 'questions' not in st.session_state:
              "o": ["Affaires Sociales", "Défense Nationale", "Affaires Etrangères", "Economie Finance"],
              "r": "Affaires Etrangères"},
             
-            {"q": "Le plus grand hôpital de référence à Conakry?",
-             "o": ["CHU Ignace Deen", "CHU Donka", "Hôpital Sino-Guinéen", "Clinique Pasteur"], 
-             "r": "CHU Donka"},
+            {"q": "Plus grand hôpital de référence à Conakry?",
+             "o": ["CHU Ignace Deen", "CHU Donka", "Sino-Guinéen", "Clinique Pasteur"], 
+             "r": CHU Donka"},
             
-            {"q": "Maladie ayant touché la Guinée (2014-2016)?", 
+            {"q": "Epidémie ayant touchée la Guinée (2014-2016)?", 
              "o": ["Paludisme", "Choléra", "COVID-19", "Ebola"], 
              "r": "Ebola"},
             
@@ -84,14 +84,14 @@ if 'questions' not in st.session_state:
              "r": "Centre de santé"},
             
             {"q": "Qui met en oeuvre la politique de santé?",
-             "o": ["Le Ministre de l'économie", "Le Directeur du CHU Ignace Deen", "Le Directeur national de la Santé", "Le Ministre de la Santé"], 
-             "r": "Le Ministre de la Santé"},
+             "o": ["Ministre de l'économie", "DG du CHU Ignace Deen", "Réprésentant OMS", "Ministre de la Santé"], 
+             "r": "Ministre de la Santé"},
             
-            {"q": "Langue principale d’enseignement?", 
+            {"q": "Langue principale de l'administration?", 
              "o": ["Soussou", "Peul", "Français", "Malinké"], 
              "r": "Français"},
             
-            {"q": "Personnel formé pour les accouchements ?", 
+            {"q": "Personnel formé pour les accouchements?", 
              "o": ["Pharmacien", "Sage-femme", "Infirmier", "Laborantin"], 
              "r": "Sage-femme"},
             
@@ -100,16 +100,16 @@ if 'questions' not in st.session_state:
              "r": "BEPC"},
             
             {"q": "Objectif principal de la vaccination?", 
-             "o": ["Soigner", "Prévenir les maladies", "Diagnostic", "Réduire coûts"],
-             "r": "Prévenir les maladies"},
+             "o": ["Soigner", "Prévenir", "Diagnostiquer", "Réduire coûts"],
+             "r": "Prévenir"},
             
-            {"q": "Établissement formant les enseignants du Sécondaire?",
+            {"q": "IES formant les enseignants du Sécondaire?",
              "o": ["Université", "ENI", "Lycée", "ISSEG"], 
              "r": "ISSEG"},
             
             {"q": "Rôle principal d’un centre de santé?",
-             "o": ["Former", "Soins simples et prévention", "Opérations", "Diplômes"], 
-             "r": "Soins simples et prévention"}
+             "o": ["Former", "Soins et prévention", "Opérations", "Chirurgie"], 
+             "r": "Soins et prévention"}
         ],
         
         "Géographie et Economie": [
