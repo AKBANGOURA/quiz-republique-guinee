@@ -1,63 +1,37 @@
-🇬🇳 Quiz Interactif : Culture & Histoire de la République de Guinée
- Présentation du Projet
-Ce projet est une application web interactive conçue pour tester et renforcer les connaissances sur la République de Guinée. À travers une banque de 100 questions variées (Géographie, Histoire, Culture, Économie), l'application propose des sessions dynamiques de 20 questions tirées aléatoirement, offrant une expérience ludique et éducative.
+🇬🇳 Quiz Interactif : Culture & Histoire - République de Guinée
+Ce repository contient un prototype d'application éducative développé pour tester les connaissances sur le patrimoine guinéen à travers une approche interactive et dynamique.
 
-L'objectif est double : promouvoir le patrimoine guinéen et démontrer une maîtrise technique de l'écosystème Python Data.
+ Objectifs du Projet
+L'outil permet de centraliser, gérer et diffuser des connaissances historiques et culturelles via une interface web moderne, optimisée pour l'expérience utilisateur (UX).
 
- Compétences Techniques & Outils
- Langages & Programmation
-Python (Core) : Utilisation avancée des structures de données (listes de dictionnaires) pour la gestion de la base de données de questions.
+ Fonctionnalités Clés :
+Tirage Aléatoire Dynamique : Sélection intelligente de 20 questions parmi une base de données de 100 entrées, évitant la redondance.
 
-Logique Algorithmique : Implémentation d'un algorithme de tirage aléatoire sans répétition (random.sample) pour garantir une expérience unique à chaque partie.
+Évaluation Qualitative Automatisée : Système de notation avec feedback instantané et mentions honorifiques personnalisées selon le score.
 
- Frameworks & Systèmes
-Streamlit : Développement d'une interface utilisateur (UI/UX) réactive et moderne.
+Interface Interactive : Développée avec Streamlit pour permettre une exploration fluide des données historiques sans latence.
 
-Session State Management : Gestion avancée de la mémoire du navigateur pour la persistance du score et de l'index des questions sans base de données externe.
+ Spécifications Techniques :
+Langage : Python 3.9+ (Gestion des structures de données complexes).
 
-Deployment : Maîtrise du cycle de déploiement continu via Streamlit Cloud synchronisé avec GitHub.
+Architecture : Gestion de l'état de session (Session State Management) pour la persistance des données utilisateur.
 
- Architecture du Système
-Moteur de Quiz : Système de validation des réponses en temps réel.
+Visualisation : Intégration de composants visuels (métriques, alertes contextuelles) pour l'analyse des résultats.
 
-Évaluation Qualitative : Algorithme de calcul de score avec feedback automatisé basé sur 7 niveaux de performance (de "À réviser" à "Honorable").
+ Structure du Repository
+app.py : Script principal contenant la logique métier et l'interface utilisateur.
 
- Impact et Valeur Ajoutée
-Éducation & Culture : Création d'un outil numérique valorisant le patrimoine guinéen, accessible à la diaspora et aux locaux.
+requirements.txt : Liste des dépendances nécessaires au déploiement.
 
-Design UX : Utilisation d'animations (balloons), de métriques visuelles et de composants interactifs pour maximiser l'engagement.
+README.md : Documentation technique du projet.
 
-Scalabilité : Architecture modulaire permettant d'étendre facilement la base de données à des milliers de questions.
+ Installation et Déploiement
+Pour exécuter ce prototype localement :
 
- Structure du Projet
-Plaintext
+Cloner le repository : git clone https://github.com/votre-compte/quiz-guinee.git
 
-├── .streamlit/         # Configuration du thème
-├── app.py              # Script principal (Logique & UI)
-├── requirements.txt    # Liste des dépendances Python
-└── README.md           # Documentation technique (ce fichier)
+Installer les bibliothèques : pip install streamlit
 
- Installation Locale
-Cloner le dépôt
-
-Bash
-
-git clone https://github.com/votre-username/quiz-guinee.git
-cd quiz-guinee
-Installer les dépendances
-
-Bash
-
-pip install streamlit
-Lancer l'application
-
-Bash
-
-streamlit run app.py
-
-À Propos de l'Auteur
-Almamy Kalla BANGOURA Consultant Data & BI 
-
-Passionné par l'intersection entre la technologie, l'éducation et l'analyse de données. Ce projet illustre ma capacité à transformer des concepts complexes en outils numériques intuitifs et performants.
+Lancer l'application : streamlit run app.py
 
 Pour consulter l'interface ou pour jouer https://akb-quiz-gn224.streamlit.app/
