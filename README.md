@@ -1,4 +1,4 @@
-🇬🇳 Quiz Interactif : Culture & Histoire - République de Guinée
+Quiz Interactif : Culture & Histoire - République de Guinée
 Ce repository contient un prototype d'application éducative développé pour tester les connaissances sur le patrimoine guinéen à travers une approche interactive et dynamique.
 
  Objectifs du Projet
@@ -35,3 +35,4 @@ Installer les bibliothèques : pip install streamlit
 Lancer l'application : streamlit run app.py
 
 Pour consulter l'interface ou pour jouer https://akb-quiz-gn224.streamlit.app/
+
